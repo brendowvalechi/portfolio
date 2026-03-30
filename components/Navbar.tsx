@@ -71,7 +71,7 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-5xl mx-auto px-8 h-16 flex items-center justify-between">
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -95,7 +95,7 @@ export default function Navbar() {
           </button>
 
           {/* Desktop links */}
-          <ul className="hidden md:flex items-center gap-1">
+          <ul className="hidden md:flex items-center gap-2">
             {links.map((link) => {
               const isActive = activeSection === link.href.replace("#", "");
               return (

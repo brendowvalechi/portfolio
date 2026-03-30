@@ -37,7 +37,7 @@ function scrollTo(href: string) {
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: "#0d0d0d", borderTop: "1px solid #1a1a1a" }}>
-      <div className="max-w-6xl mx-auto px-6 py-14">
+      <div className="max-w-5xl mx-auto px-8 py-14">
         {/* Three-column grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-12">
           {/* Col 1: Brand */}

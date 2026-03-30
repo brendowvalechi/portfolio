@@ -154,7 +154,7 @@ export default function Hero() {
 
           <button
             onClick={() => scrollTo("contato")}
-            className="flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105 active:scale-95 focus:outline-none w-full sm:w-auto justify-center"
+            className="flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105 active:scale-95 focus:outline-none w-full sm:w-auto justify-center whitespace-nowrap"
             style={{
               color: "#f5f5f5",
               border: "1px solid #3b82f640",

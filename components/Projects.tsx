@@ -32,7 +32,7 @@ export default function Projects() {
         }}
       />
 
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-8">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -86,7 +86,7 @@ export default function Projects() {
         </motion.div>
 
         {/* Cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, i) => (
             <ProjectCard key={project.id} project={project} index={i} />
           ))}
