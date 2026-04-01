@@ -161,8 +161,10 @@ export default function About() {
                 style={{
                   width: 200,
                   height: 200,
-                  border: "2px solid #3b82f630",
                   zIndex: 1,
+                  isolation: "isolate",
+                  transform: "translateZ(0)",
+                  willChange: "transform",
                 }}
               >
                 <Image
