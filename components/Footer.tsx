@@ -37,17 +37,31 @@ function scrollTo(href: string) {
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: "#0d0d0d", borderTop: "1px solid #1a1a1a" }}>
-      <div className="max-w-5xl mx-auto px-8 py-14">
+      <div className="max-w-4xl mx-auto px-6 sm:px-10 py-14">
         {/* Three-column grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-12">
           {/* Col 1: Brand */}
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
               <span
-                className="w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold text-white"
-                style={{ background: "linear-gradient(135deg, #3b82f6, #8b5cf6)" }}
+                className="flex items-center gap-0.5"
+                style={{ fontFamily: "JetBrains Mono, monospace" }}
               >
-                BV
+                <span style={{ color: "#525252", fontSize: "0.9rem", fontWeight: 500 }}>&lt;</span>
+                <span
+                  style={{
+                    fontSize: "0.7rem",
+                    fontWeight: 700,
+                    background: "linear-gradient(135deg, #3b82f6, #8b5cf6)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                    letterSpacing: "0.04em",
+                  }}
+                >
+                  b
+                </span>
+                <span style={{ color: "#3b82f6", fontSize: "0.9rem", fontWeight: 500 }}>/&gt;</span>
               </span>
               <span className="font-bold text-base" style={{ color: "#f5f5f5" }}>
                 Brendow Valechi

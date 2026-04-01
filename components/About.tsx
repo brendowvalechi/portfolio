@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
 interface HighlightedTextProps {
@@ -79,7 +80,7 @@ export default function About() {
         }}
       />
 
-      <div className="max-w-5xl mx-auto px-8">
+      <div className="max-w-4xl mx-auto px-6 sm:px-10">
         {/* Section title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -133,7 +134,7 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="flex-shrink-0 flex flex-col items-center gap-4"
           >
-            {/* Glow ring */}
+            {/* Photo with glow ring */}
             <div className="relative">
               <div
                 className="absolute inset-0 rounded-full"
@@ -156,28 +157,21 @@ export default function About() {
                 }}
               />
               <div
-                className="relative flex items-center justify-center rounded-full"
+                className="relative rounded-full overflow-hidden"
                 style={{
                   width: 200,
                   height: 200,
-                  background: "linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)",
                   border: "2px solid #3b82f630",
                   zIndex: 1,
                 }}
               >
-                <span
-                  className="font-bold select-none"
-                  style={{
-                    fontSize: "4rem",
-                    background: "linear-gradient(135deg, #3b82f6, #8b5cf6)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                    lineHeight: 1,
-                  }}
-                >
-                  BV
-                </span>
+                <Image
+                  src="/profile.jpg"
+                  alt="Brendow Valechi"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
             </div>
 

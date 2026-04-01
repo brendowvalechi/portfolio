@@ -71,7 +71,7 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-5xl mx-auto px-8 h-16 flex items-center justify-between">
+        <div className="max-w-4xl mx-auto px-6 sm:px-10 h-16 flex items-center justify-between">
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -79,12 +79,24 @@ export default function Navbar() {
             aria-label="Voltar ao topo"
           >
             <span
-              className="w-9 h-9 rounded-lg flex items-center justify-center text-sm font-bold text-white transition-all duration-200 group-hover:scale-105"
-              style={{
-                background: "linear-gradient(135deg, #3b82f6, #8b5cf6)",
-              }}
+              className="flex items-center gap-0.5 transition-all duration-200 group-hover:scale-105"
+              style={{ fontFamily: "JetBrains Mono, monospace" }}
             >
-              BV
+              <span style={{ color: "#525252", fontSize: "1rem", fontWeight: 500 }}>&lt;</span>
+              <span
+                style={{
+                  fontSize: "0.8rem",
+                  fontWeight: 700,
+                  background: "linear-gradient(135deg, #3b82f6, #8b5cf6)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  letterSpacing: "0.04em",
+                }}
+              >
+                b
+              </span>
+              <span style={{ color: "#3b82f6", fontSize: "1rem", fontWeight: 500 }}>/&gt;</span>
             </span>
             <span
               className="font-mono text-sm font-medium hidden sm:block transition-colors duration-200"

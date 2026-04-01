@@ -32,7 +32,7 @@ export default function Projects() {
         }}
       />
 
-      <div className="max-w-5xl mx-auto px-8">
+      <div className="max-w-4xl mx-auto px-6 sm:px-10">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

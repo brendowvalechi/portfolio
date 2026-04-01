@@ -123,7 +123,7 @@ export default function TechStack() {
         }}
       />
 
-      <div className="max-w-5xl mx-auto px-8">
+      <div className="max-w-4xl mx-auto px-6 sm:px-10">
         {/* Section title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

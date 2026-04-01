@@ -73,7 +73,7 @@ export default function Hero() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto w-full">
+      <div className="relative z-10 flex flex-col items-center text-center px-6 sm:px-10 max-w-4xl mx-auto w-full">
         {/* "Olá, eu sou" */}
         <motion.p
           {...fadeUp(0.1)}
